@@ -2,25 +2,19 @@ languageCode: "en-us"
 baseUrl: ""
 title: "dydev012 blog"
 theme: "anubis"
-paginate: 2
+paginate: 5
 disqusShortname: "yourdiscussshortname"
 googleAnalytics: "G-12345"
 enableRobotsTXT: true
 
 menu:
   main:
-  - identifier: archive
-    name: Archive
-    title: Archive
-    url: /posts/
-    weight: 3
-
-  - identifier: about
-    name: About
-    title: About
-    url: /about/
+  - identifier: posts
+    name: Posts
+    title: posts
+    url: /
     weight: 1
-  
+
   - identifier: tags
     name: Tags
     title: Tags
@@ -39,14 +33,15 @@ params:
   #   - css/my.css # relative path to "assets" directory (don't use main.css filename)
   # customJS:
   #   - js/main.js # relative path to "assets" directory
-  dateFormat: "2006-01-02"
+  dateFormat: "01-02-2006"
   paginationSinglePost: true
   style: light
   mainSections: [ "posts" ] # which sections should be on index/main page
-  sectionsWithFullContentOnListPage: [ "notes" ] # for which sections content should be displayed on list pages
+  # sectionsWithFullContentOnListPage: [ "notes" ] # for which sections content should be displayed on list pages
   readMore: false # show read more button
   readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false
+  disableComments: true
   toc: true # display Table of Contents
   tocWordCount: 300 # ...when a post is longer than 300 words
   copyCodeButton: true # true by default
@@ -58,19 +53,19 @@ params:
   utterancesIssue: "" # optional
   utterancesLabel: "" # optional
   # isso support
-  isso:
-    enabled: true # mandatory
-    data: "https://comments.example.com/" # mandatory
-    jsLocation: "https://comments.example.com/js/embed.min.js" # mandatory
-    css: true # optional
-    lang: "de" # optional
-    replyToSelf: true # mandatory
-    requireAuthor: true # mandatory
-    requireEmail: true # mandatory
-    id: "thread-id" # optional
-    avatar: true # optional
-    avatar-bg: "#f0f0f0" # optional
-    feed: false # optional
+  # isso:
+  #   enabled: true # mandatory
+  #   data: "https://comments.example.com/" # mandatory
+  #   jsLocation: "https://comments.example.com/js/embed.min.js" # mandatory
+  #   css: true # optional
+  #   lang: "de" # optional
+  #   replyToSelf: true # mandatory
+  #   requireAuthor: true # mandatory
+  #   requireEmail: true # mandatory
+  #   id: "thread-id" # optional
+  #   avatar: true # optional
+  #   avatar-bg: "#f0f0f0" # optional
+  #   feed: false # optional
   UmamiAnalytics:
     enabled: true # mandatory
     dnt: true # optional
